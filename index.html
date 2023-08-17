@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+<meta charset=utf-8 />
+<meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+<meta name = "viewport" content="wisth=device-width, initial-scale=1.0">
+<title>Dashboard RZD</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/calendar.css" class="stylesheet">
+<link rel="shortcut icon" href="/image/logo.ico" type="image/x-icon">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div id="slider"></div>
+        <header class="header header-main" class="banner" id="mainHeader" role="banner">
+            <nav role="navigation">
+                <div class="top-header">
+                    <div class="navBurger">
+                        <div class="burger"></div>
+                    </div>
+                </div>
+                <ul id="menu-vertical-menu" class="nav">
+                    <li class="menu__list-item">
+                        <a href="happy.html" class="menu__list-link">Happy birthday</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="diagramm.html" class="menu__list-link" alt="2">Диаграммы</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="graf.html" class="menu__list-link">Графики</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="raiting.html" class="menu__list-link">Отчеты за квартал</a>
+                    </li>
+                     <li class="menu__list-item">
+                        <a href="otdel.html" class="menu__list-link">Рейтинг отделов</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="appeals.html" class="menu__list-link">Удовлетворенность</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="dash.html" class="menu__list-link">Dashboard директора</a>
+                    </li>
+                    <li class="menu__list-item">
+                      <a href="index.html" class="menu__list-link" alt="1">Календарь</a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+</div>
+
+    <main class="main">
+      <div class="container">          
+        <div class="sidebar-wrapper " >
+
+        <div class="mobile-header ">
+
+          <div class="row">
+            <!-- <div class="col-2"> -->
+              <a href="#" data-activates="sidebar" class="button-collapse">
+                <i class="material-icons">menu</i>
+              </a>
+            </div>
+            <!-- <div class="col"> -->
+              <h4 class="redtext">События</h4>
+            <!-- </div> -->
+          </div>
+   
+        </div>
+     
+        <div class="main-wrapper">
+            <div class="sidebar-title right">
+              <h4>Текущие события:</h4>
+              <h5 id="eventDayName">Date</h5>
+            
+            <div class="sidebar-events" id="sidebarEvents">
+              <div class="empty-message">На выбранную дату нет событий</div>
+            </div>
+    </div>
+          </div>
+    
+          <!-- <div class="content-wrapper grey lighten-3"> -->
+            <div class="container">
+    
+              <div class="calendar-wrapper ">
+    
+                <div class="header-background">
+                  <div class="calendar-header">
+    
+                    <a class="prev-button" id="prev">
+                      <img src="image/left.png"/>
+                    </a>
+                    <a class="next-button" id="next">
+                      <img src="image/right.png"/>
+                    </a>
+    
+                    <div class="row header-title">
+    
+                      <div class="header-text">
+                        <h3 id="month-name"></h3>
+                        <h5 id="todayDayName"></h5>
+                      </div>
+    
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="calendar-content">
+                  <div id="calendar-table" class="calendar-cells">
+                    <div id="table-header">
+                      <div class="row">
+                        <div class="col">Mon</div>
+                        <div class="col">Tue</div>
+                        <div class="col">Wed</div>
+                        <div class="col">Thu</div>
+                        <div class="col">Fri</div>
+                        <div class="col">Sat</div>
+                        <div class="col">Sun</div>
+                      </div>
+                    </div>
+                    <div id="table-body" class=""></div>
+                  </div>
+                </div>
+    
+                <div class="calendar-footer">
+                  <div class="emptyForm" id="emptyForm">
+                    <h4>Нет событий</h4>
+                    <a class="addEvent" id="changeFormButton">Добавить событие</a>
+                  </div>
+                  <div class="addForm" id="addForm">
+                    <h4>Добавить новое событие</h4>
+    
+                    <div class="row">
+                      <div class="input-field col s6">
+                        <input id="eventTitleInput" type="text" class="validate">
+                        <label class="text__rait2" for="eventTitleInput">Событие</label>
+                      </div>
+                      <div class="input-field col s6">
+                        <input id="eventDescInput" type="text" class="validate">
+                        <label class="text__rait2" for="eventDescInput">Время</label>
+                      </div>
+                    </div>
+    
+                    <div class="addEventButtons">
+                      <a class="waves-effect waves-light btn blue lighten-2" id="addEventButton">Добавить</a>
+                      <a class="waves-effect waves-light btn grey lighten-2" id="cancelAdd">Отмена</a>
+                    </div>
+    
+                  </div>
+                </div>
+    
+              </div>
+    
+            </div>
+          <!-- </div> -->
+    
+        <!-- </div> -->
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+                crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+                crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+        <script>
+          $(".button-collapse").sideNav();
+        </script>
+      </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <!-- <nav class = "footer__menu"> -->
+                <a class="logo" href="#">
+                    <img class = "logo__img" src = "image/image2.png" alt="">
+                </a>
+            <!-- </nav> -->
+        </div>
+    </footer>
+    <div class="container">
+    <script src ="js/calendar.js"></script>
+    </div>
+</body>

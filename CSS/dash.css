@@ -1,0 +1,477 @@
+html{
+  box-sizing: border-box;
+}
+
+*,*::after,*::before{
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html, body{
+  height: 100%;
+}
+
+ul{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+    background-color: #ffffff;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+
+.body{
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 64px;
+  font-weight: 400;
+  color: #ED3020;
+  cursor: pointer;
+}
+
+
+.header__inner{
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+  
+.menu__list{
+  display: flex;
+  gap: 35px;
+}
+
+.menu__list-link{
+  color: #ED3020;
+  text-decoration: uppercase;
+  font-weight: 700;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 23px;
+}
+
+header#mainHeader {
+  width: 60px;
+  height: 100%;
+  left: 0;
+  -webkit-transition: left 0.5s ease-in-out 0.2s;
+  transition: left 0.5s ease-in-out 0.2s;
+  position: fixed;
+  display: inline-block;
+  background-color: #CD202C;
+  z-index: 1000;
+}
+header#mainHeader nav {
+  height: 100%;
+  width: 60px;
+  box-shadow: 0 1px 3px #CD202C, 0 1px 2px #CD202C;
+}
+header#mainHeader nav .top-header {
+  background-color: #CD202C;
+  position: relative;
+}
+header#mainHeader nav:after {
+  content: ' ';
+  background-color: #CD202C;
+  width: 60px;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+}
+header#mainHeader nav:before {
+  content: ' ';
+  height: 100%;
+  width: 0px;
+  background-color: rgba(205, 32, 44, 0.79);
+  position: absolute;
+  left: 60px;
+  -webkit-transition: width 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  transition: width 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+header#mainHeader nav .navBurger {
+  cursor: pointer;
+  width: 100%;
+  height: 45px;
+}
+header#mainHeader nav .navBurger .burger {
+  margin-left: 18px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+header#mainHeader nav .navBurger .burger, header#mainHeader nav .navBurger .burger::before, header#mainHeader nav .navBurger .burger::after {
+  border-radius: 2px;
+  position: absolute;
+  z-index: 100;
+  width: 24px;
+  height: 4px;
+  background: white;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+header#mainHeader nav .navBurger .burger::before, header#mainHeader nav .navBurger .burger::after {
+  content: "";
+  display: block;
+}
+header#mainHeader nav .navBurger .burger::before {
+  margin-top: -8px;
+}
+header#mainHeader nav .navBurger .burger::after {
+  margin-top: 8px;
+}
+header#mainHeader nav ul {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  margin-top: calc(50vh - 160px);
+}
+header#mainHeader nav ul li {
+  font-size: 14px;
+  width: 60px;
+  height: 40px;
+  cursor: pointer;
+  position: relative;
+  display: block;
+}
+header#mainHeader nav ul li a {
+  display: block;
+  width: 150px;
+  color: white;
+  position: relative;
+  z-index: 0;
+  opacity: 0;
+  left: -80px;
+  text-transform: uppercase;
+  -webkit-transition: left 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045), opacity 0.15s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  transition: left 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045), opacity 0.15s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  color: #fff;
+  text-decoration: none;
+}
+header#mainHeader nav ul li:before {
+  z-index: 10;
+  content: ' ';
+  width: 8px;
+  height: 8px;
+  background-color: transparent;
+  position: absolute;
+  left: 26px;
+  top: 3px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  -webkit-transform: scale(1) translate3d(0, 0, 0);
+          transform: scale(1) translate3d(0, 0, 0);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+header#mainHeader nav ul li a:hover, header#mainHeader nav ul li a:active, header#mainHeader nav ul li a:visited, header#mainHeader nav ul li a:focus {
+  background-color: transparent !important;
+  color: white;
+}
+header#mainHeader nav ul li:hover:before {
+  background-color: white;
+}
+header#mainHeader nav ul li.active:before, header#mainHeader nav ul li:hover:before {
+  -webkit-transform: scale(1.5) translate3d(0, 0, 0);
+          transform: scale(1.5) translate3d(0, 0, 0);
+  background-color: white;
+}
+header#mainHeader nav:hover:before {
+  width: 160px;
+  -webkit-transition: width 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: width 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+header#mainHeader nav:hover .burger {
+  /* 		background:transparent; */
+  -webkit-transform: rotate(45deg) translate3d(0, 0, 0);
+          transform: rotate(45deg) translate3d(0, 0, 0);
+}
+header#mainHeader nav:hover .burger::before {
+  margin-top: 0px;
+  -webkit-transform: rotate(-90deg) translate3d(0, 0, 0);
+          transform: rotate(-90deg) translate3d(0, 0, 0);
+}
+header#mainHeader nav:hover .burger::after {
+  margin-top: 0px;
+  -webkit-transform: rotate(0deg) translate3d(0, 0, 0);
+          transform: rotate(0deg) translate3d(0, 0, 0);
+}
+header#mainHeader nav:hover li a {
+  left: 70px;
+  opacity: 1;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  -webkit-transition-property: left, opacity;
+  transition-property: left, opacity;
+  -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+header#mainHeader nav:hover li:nth-child(1) a {
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+header#mainHeader nav:hover li:nth-child(2) a {
+  -webkit-transition-delay: 0.34s;
+          transition-delay: 0.34s;
+}
+header#mainHeader nav:hover li:nth-child(3) a {
+  -webkit-transition-delay: 0.38s;
+          transition-delay: 0.38s;
+}
+header#mainHeader nav:hover li:nth-child(4) a {
+  -webkit-transition-delay: 0.42s;
+          transition-delay: 0.42s;
+}
+header#mainHeader nav:hover li:nth-child(5) a {
+  -webkit-transition-delay: 0.46s;
+          transition-delay: 0.46s;
+}
+header#mainHeader nav:hover li:nth-child(6) a {
+  -webkit-transition-delay: 0.50s;
+          transition-delay: 0.50s;
+}
+header#mainHeader nav:hover li:nth-child(7) a {
+  -webkit-transition-delay: 0.54s;
+          transition-delay: 0.54s;
+}
+header#mainHeader nav:hover li:nth-child(8) a {
+  -webkit-transition-delay: 0.58s;
+          transition-delay: 0.58s;
+}
+
+.text__rait_dash{
+  padding-top: 20px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+  font-weight: 400;
+  color: #CD202C;
+  text-align: center;
+  line-height: 2.5;
+}
+
+.text__osn{
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 25px;
+  font-weight: lighter;
+  padding: 12px 10px;
+  color: #5B5B5B;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.text2__rait{
+  padding-top: 5px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: 900;
+  font-size: 25px;
+  font-weight: 400;
+  color: rgba(205, 32, 44, 0.75);
+  margin-left: 1050px;
+  text-decoration: underline;
+}
+
+.table {
+  padding-top: 5px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  width: 100%;
+  border: none;
+  margin-bottom: 20px;
+}
+th {
+  font-size: 22px;
+  font-weight: 600;
+  padding: 12px 10px;
+  border-bottom: 1px ;
+  color: #5B5B5B;
+  text-align: left;
+  }
+
+
+
+.th__appeals{
+  padding: 10px;
+  color: #8D8173;
+  text-align: left;
+}
+
+  tbody tr:nth-child(2) {
+  border-bottom: 1px solid;
+  }
+  td {
+  padding: 10px;
+  color: #8D8173;
+  text-align: center;
+  }
+
+  
+    
+td {
+  padding: 10px;
+  color: #8D8173;
+  text-align: center;
+}
+
+.th__left{
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 18px;
+  font-weight: lighter;
+  padding: 12px 10px;
+  color: #5B5B5B;
+  text-align: left;
+} 
+
+.footer{
+  background-color: white;
+  padding: 20px 0 0px;
+  margin-left:-400px;
+  height: 90px;
+  margin-top: 0px;
+}
+
+.colored-cell {
+  background-color: #98d28ed2;
+}
+
+.colored-cell1 {
+  background-color: #e3848adb;
+}
+
+.colored-cell2 {
+  background-color: #98d28e7e;
+}
+
+.colored-cell3 {
+  background-color: #e3848a7a;
+}
+
+
+  input {
+  display: block;
+  outline: none;
+  border: none;
+  }
+  textarea {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  display: block;
+  outline: none;
+  }
+  textarea:focus, input:focus {
+  border-color: transparent;
+  }
+  /* ------------------------------------ */
+  button {
+  outline: none;
+  border: none;
+  background: transparent;
+  }
+  button:hover {
+  cursor: pointer;
+  }
+  iframe {
+  border: none;
+  }
+  /*//////////////////////////////////////////////////////////////////
+  [ Table ]*/
+  .limiter {
+  width: 100%;
+  margin: 0 auto;
+  }
+  .container-table100 {
+  width: 100%;
+  min-height: 200px;
+  background: #d1d1d1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 33px 50px;
+  }
+  .wrap-table100 {
+    margin: auto;
+  }
+  /*//////////////////////////////////////////////////////////////////
+  [ Table ]*/
+  table {
+  width: 100%;
+  background-color: #fff;
+  border-collapse: collapse;
+  }
+  th, td {
+  font-weight: unset;
+  padding-right: 10px;
+  }
+  .column100 {
+  width: 50px;
+  padding-left: 20px;
+  }
+  .column100.column1 {
+  width: 110px;
+  padding-left: 42px;
+  }
+  .row100.head th {
+  padding-top: 24px;
+  padding-bottom: 20px;
+
+  }
+  .row100 td {
+  padding-top: 18px;
+  padding-bottom: 14px;
+  }
+
+.table100.ver4 td {
+font-family: 'Yanone Kaffeesatz', sans-serif;
+font-size: 16px;
+color: #808080;
+line-height: 1.4;
+}
+
+.table100_text_bold {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #000000;
+  line-height: 1.4;
+}
+
+.table100.ver4 th {
+font-family: 'Yanone Kaffeesatz', sans-serif;
+font-size: 16px;
+text-align: center;
+color: #fff;
+line-height: 1.4;
+text-transform: uppercase;
+background-color: #ED3020;
+}
+th:first-child {
+  border-top-left-radius: 15px;
+}
+
+th:last-child {
+  border-top-right-radius: 15px;
+}
+
+.table100.ver4 .row100:hover td {
+color: #ED3020;
+}
+.table100.ver4 .hov-column-ver4 {
+background-color: #ffebed;
+}
+.table100.ver4 .hov-column-head-ver4 {
+background-color: #ED3020;
+}
+.table100.ver4 .row100 td:hover {
+background-color: #ffebed;
+color: #ED3020;
+}

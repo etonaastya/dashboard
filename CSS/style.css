@@ -1,0 +1,667 @@
+html{
+  box-sizing: border-box;
+}
+
+*,*::after,*::before{
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html, body{
+  height: 100%;
+}
+
+ul{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+    background-color: #ffffff;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+
+.body{
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 64px;
+  font-weight: 400;
+  color: #ED3020;
+  cursor: pointer;
+}
+
+
+.header__inner{
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+  
+.menu__list{
+  display: flex;
+  gap: 35px;
+}
+
+.menu__list-link{
+  color: #ED3020;
+  text-decoration: uppercase;
+  font-weight: 700;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 23px;
+}
+
+
+
+.text__rait{
+  padding-top: 20px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+  font-weight: 400;
+  color: #CD202C;
+  text-align: center;
+  line-height: 1.5;
+}
+
+
+
+.text__osn{
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 25px;
+    font-weight: lighter;
+    padding: 12px 10px;
+    color: #5B5B5B;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.text2__rait{
+  padding-top: 5px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: 900;
+  font-size: 25px;
+  font-weight: 400;
+  color: rgba(205, 32, 44, 0.75);
+  margin-left: 1050px;
+  text-decoration: underline;
+}
+
+.table {
+  padding-top: 5px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+	width: 100%;
+	border: none;
+	margin-bottom: 20px;
+}
+th {
+  font-size: 22px;
+  font-weight: 600;
+  padding: 12px 10px;
+  border-bottom: 1px solid #5B5B5B;
+  color: #5B5B5B;
+  text-align: left;
+  }
+
+
+
+.th__appeals{
+  padding: 10px;
+  color: #8D8173;
+  text-align: left;
+}
+
+  tbody tr:nth-child(2) {
+  border-bottom: 1px solid #5B5B5B;
+  }
+  td {
+  padding: 10px;
+  color: #8D8173;
+  text-align: center;
+  }
+
+  
+    
+    td {
+    padding: 10px;
+    color: #8D8173;
+    text-align: center;
+    }
+
+  .th__left{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 18px;
+    font-weight: lighter;
+    padding: 12px 10px;
+    color: #5B5B5B;
+    text-align: left;
+  }
+
+
+  .footer{
+    background-color: white;
+    padding: 20px 0 0px;
+    margin-left:-400px;
+    height: 90px;
+    margin-top: -100px;
+   }
+
+
+
+ 
+  .border{
+    border-bottom: 1px solid #ddd;
+  }
+
+  .left__png{
+    position: absolute;
+    left: 50px;
+    padding-top:370px;
+  }
+
+  .right__png{
+    position: absolute;
+    right: 0px;
+    padding-top:325px;
+  }
+
+
+
+  .text_happy_1 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 200; /* Light/тонкий */
+    font-size: 50px;
+    color: #ED3020;
+    margin-left: 150px;
+    margin-right: auto;
+    width: 300px;
+    text-align: right;
+    padding-top: 200px;
+
+  }
+    .text_happy_2 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: bold; /* Light/тонкий */
+    font-size: 50px;
+    color: #ED3020;
+    margin-left: 150px;
+    margin-right: auto;
+    width: 300px;
+    text-align: right;
+    /* padding-top: 200px; */
+  }
+
+  .text_happy_3 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 200; /* Light/тонкий */
+    font-size: 30px;
+    color: #ED3020;
+    margin-left: 150px;
+    margin-right: auto;
+    width: 300px;
+    text-align: right;
+    padding-top: 10px;
+  }
+
+
+
+  #chartdiv {
+    width: 100%;
+    height: 400px;
+  }
+  .amcharts-amexport-menu-level-0 li{
+    width:40px!important;
+    height:40px!important;
+    padding-top:2px;
+  }
+    
+  .amcharts-amexport-menu-level-1 li{
+    width:140px!important;
+    height:40px!important;
+  }  
+    
+  .amcharts-amexport-menu-level-0 li:hover{
+    background-color: #f2f2f7;
+  }
+    
+  .amcharts-amexport-menu-level-1 li:hover{
+    background-color: #f2f2f7;
+  } 
+    
+  .amcharts-amexport-item {
+    background-color: #fff;
+  }
+  
+  .amcharts-amexport-item:hover {
+    background-color: #f2f2f7;
+  }  
+    
+  .amcharts-amexport-top .amcharts-amexport-item > .amcharts-amexport-menu {
+  background-color: #f2f2f7;
+   border:solid black 1px;
+    text-align:center;
+  }
+  
+  #contentTable{
+    color:#000;
+  }
+    
+  table{
+    padding:10px;
+    width:100%;
+  }
+    
+  #titleTool{
+    background-color:#F1F9FE;
+    padding:15px;
+    padding-left:20px;
+     padding-right:20px;
+    border-radius: 10% 10% 0% 0%;
+    z-index:999;
+  }  
+    
+  th  {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 18px;
+    font-weight:600;
+    font-size:16px;
+    color:#CD202C;
+  }
+    
+  td  {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 18px;
+    font-weight:600;
+    font-size:16px;
+  } 
+/* меню */
+
+  header#mainHeader {
+    width: 60px;
+    height: 100%;
+    left: 0;
+    -webkit-transition: left 0.5s ease-in-out 0.2s;
+    transition: left 0.5s ease-in-out 0.2s;
+    position: fixed;
+    display: inline-block;
+    background-color: #CD202C;
+    z-index: 1000;
+  }
+  header#mainHeader nav {
+    height: 100%;
+    width: 60px;
+    box-shadow: 0 1px 3px #CD202C, 0 1px 2px #CD202C;
+  }
+  header#mainHeader nav .top-header {
+    background-color: #CD202C;
+    position: relative;
+  }
+  header#mainHeader nav:after {
+    content: ' ';
+    background-color: #CD202C;
+    width: 60px;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+  }
+  header#mainHeader nav:before {
+    content: ' ';
+    height: 100%;
+    width: 0px;
+    background-color: rgba(205, 32, 44, 0.79);
+    position: absolute;
+    left: 60px;
+    -webkit-transition: width 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    transition: width 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  }
+  header#mainHeader nav .navBurger {
+    cursor: pointer;
+    width: 100%;
+    height: 45px;
+  }
+  header#mainHeader nav .navBurger .burger {
+    margin-left: 18px;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+  header#mainHeader nav .navBurger .burger, header#mainHeader nav .navBurger .burger::before, header#mainHeader nav .navBurger .burger::after {
+    border-radius: 2px;
+    position: absolute;
+    z-index: 100;
+    width: 24px;
+    height: 4px;
+    background: white;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  header#mainHeader nav .navBurger .burger::before, header#mainHeader nav .navBurger .burger::after {
+    content: "";
+    display: block;
+  }
+  header#mainHeader nav .navBurger .burger::before {
+    margin-top: -8px;
+  }
+  header#mainHeader nav .navBurger .burger::after {
+    margin-top: 8px;
+  }
+  header#mainHeader nav ul {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin-top: calc(50vh - 160px);
+  }
+  header#mainHeader nav ul li {
+    font-size: 14px;
+    width: 60px;
+    height: 40px;
+    cursor: pointer;
+    position: relative;
+    display: block;
+  }
+  header#mainHeader nav ul li a {
+    display: block;
+    width: 150px;
+    color: white;
+    position: relative;
+    z-index: 0;
+    opacity: 0;
+    left: -80px;
+    text-transform: uppercase;
+    -webkit-transition: left 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045), opacity 0.15s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    transition: left 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045), opacity 0.15s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    color: #fff;
+    text-decoration: none;
+  }
+  header#mainHeader nav ul li:before {
+    z-index: 10;
+    content: ' ';
+    width: 8px;
+    height: 8px;
+    background-color: transparent;
+    position: absolute;
+    left: 26px;
+    top: 3px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    -webkit-transform: scale(1) translate3d(0, 0, 0);
+            transform: scale(1) translate3d(0, 0, 0);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  header#mainHeader nav ul li a:hover, header#mainHeader nav ul li a:active, header#mainHeader nav ul li a:visited, header#mainHeader nav ul li a:focus {
+    background-color: transparent !important;
+    color: white;
+  }
+  header#mainHeader nav ul li:hover:before {
+    background-color: white;
+  }
+  header#mainHeader nav ul li.active:before, header#mainHeader nav ul li:hover:before {
+    -webkit-transform: scale(1.5) translate3d(0, 0, 0);
+            transform: scale(1.5) translate3d(0, 0, 0);
+    background-color: white;
+  }
+  header#mainHeader nav:hover:before {
+    width: 160px;
+    -webkit-transition: width 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: width 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  header#mainHeader nav:hover .burger {
+    /* 		background:transparent; */
+    -webkit-transform: rotate(45deg) translate3d(0, 0, 0);
+            transform: rotate(45deg) translate3d(0, 0, 0);
+  }
+  header#mainHeader nav:hover .burger::before {
+    margin-top: 0px;
+    -webkit-transform: rotate(-90deg) translate3d(0, 0, 0);
+            transform: rotate(-90deg) translate3d(0, 0, 0);
+  }
+  header#mainHeader nav:hover .burger::after {
+    margin-top: 0px;
+    -webkit-transform: rotate(0deg) translate3d(0, 0, 0);
+            transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+  header#mainHeader nav:hover li a {
+    left: 70px;
+    opacity: 1;
+    -webkit-transition-duration: 0.4s;
+            transition-duration: 0.4s;
+    -webkit-transition-property: left, opacity;
+    transition-property: left, opacity;
+    -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  header#mainHeader nav:hover li:nth-child(1) a {
+    -webkit-transition-delay: 0.3s;
+            transition-delay: 0.3s;
+  }
+  header#mainHeader nav:hover li:nth-child(2) a {
+    -webkit-transition-delay: 0.34s;
+            transition-delay: 0.34s;
+  }
+  header#mainHeader nav:hover li:nth-child(3) a {
+    -webkit-transition-delay: 0.38s;
+            transition-delay: 0.38s;
+  }
+  header#mainHeader nav:hover li:nth-child(4) a {
+    -webkit-transition-delay: 0.42s;
+            transition-delay: 0.42s;
+  }
+  header#mainHeader nav:hover li:nth-child(5) a {
+    -webkit-transition-delay: 0.46s;
+            transition-delay: 0.46s;
+  }
+  header#mainHeader nav:hover li:nth-child(6) a {
+    -webkit-transition-delay: 0.50s;
+            transition-delay: 0.50s;
+  }
+  header#mainHeader nav:hover li:nth-child(7) a {
+    -webkit-transition-delay: 0.54s;
+            transition-delay: 0.54s;
+  }
+  header#mainHeader nav:hover li:nth-child(8) a {
+    -webkit-transition-delay: 0.58s;
+            transition-delay: 0.58s;
+  }
+
+
+  .confetti {
+    width: 15px;
+    height: 15px;
+    background-color: #f2d74e;
+    position: absolute;
+    left: 50%;
+    animation: confetti 5s ease-in-out -2s infinite;
+    transform-origin: left top;
+  }
+  .confetti:nth-child(1) {
+    background-color: #f2d74e; left: 10%; animation-delay: 0;
+  }
+  .confetti:nth-child(2) {
+    background-color: #95c3de; left: 20%; animation-delay: -5s;
+  }
+  .confetti:nth-child(3) {
+    background-color: #ff9a91; left: 30%; animation-delay: -3s;
+  }
+  .confetti:nth-child(4) {
+    background-color: #f2d74e; left: 40%; animation-delay: -2.5s;
+  }
+  .confetti:nth-child(5) {
+    background-color: #95c3de; left: 50%; animation-delay: -4s;
+  }
+  .confetti:nth-child(6) {
+    background-color: #ff9a91; left: 60%; animation-delay: -6s;
+  }
+  .confetti:nth-child(7) {
+    background-color: #f2d74e; left: 70%; animation-delay: -1.5s;
+  }
+  .confetti:nth-child(8) {
+    background-color: #95c3de; left: 80%; animation-delay: -2s;
+  }
+  .confetti:nth-child(9) {
+    background-color: #ff9a91; left: 90%; animation-delay: -3.5s;
+  }
+  .confetti:nth-child(10) {
+    background-color: #f2d74e; left: 100%; animation-delay: -2.5s;
+  }
+   .confetti:nth-child(11) {
+    background-color: #95c3de; right: 20%; animation-delay: -5s;
+  }
+  @keyframes confetti {
+    0% { transform: rotateZ(15deg) rotateY(0deg) translate(0,0); }
+    25% { transform: rotateZ(5deg) rotateY(360deg) translate(-5vw,20vh); }
+    50% { transform: rotateZ(15deg) rotateY(720deg) translate(5vw,60vh); }
+    75% { transform: rotateZ(5deg) rotateY(1080deg) translate(-10vw,80vh); }
+    100% { transform: rotateZ(15deg) rotateY(1440deg) translate(10vw,110vh); }
+  }
+ 
+ .name
+ {
+     font-weight: 500;
+     text-transform: uppercase;
+     padding: 36px;
+     position: fixed;
+     left: 550px;
+     right: 550px;
+     text-align: right;
+     top: 37%;
+     color: #ED3020;
+     font-family: 'Yanone Kaffeesatz', sans-serif;
+     font-size: 80px;
+     letter-spacing: 10px;
+     text-shadow: 2px 4px 11px rgb(0 0 0 / 28%);
+      }
+
+.name1
+{
+padding: 25px;
+position: 100px;
+left: 500px;
+right: 500px;
+text-align: right;
+top: 37%;
+position: fixed;
+color: #ED3020;
+font-family: 'Yanone Kaffeesatz', sans-serif;
+font-size: 50px;
+letter-spacing: 10px;
+text-shadow: 2px 4px 11px rgb(0 0 0 / 28%);
+}
+
+.viz {
+margin: 1rem;
+display: grid;
+grid-template-columns: repeat(2, 400px);
+grid-gap: 1rem;
+justify-content: center;
+}
+          .viz header,
+          .viz footer {
+            grid-column: span 2;
+            line-height: 2;
+          }
+          .viz header h1 {
+            font-family: "Noto Serif SC", serif;
+          }
+          /* separate the svg from the surrounding header and footer */
+          .viz svg {
+            margin: 1.5rem 0;
+            width: 100%;
+            height: auto;
+          }
+          /* with a pseudo element include a P.S. label highlighting the purpose of the footer */
+          .viz footer {
+            margin-top: 4rem;
+            position: relative;
+            font-size: 0.9rem;
+          }
+          .viz footer:before {
+            position: absolute;
+            top: 100%;
+            right: 0%;
+            transform: translate(0, -50%);
+            content: "P.S.";
+            font-size: 4rem;
+            opacity: 0.1;
+            font-family: "Noto Serif SC", serif;
+          }
+          .viz footer a {
+            color: inherit;
+          }
+          
+          /* on smaller viewports display the items in a single column */
+          @media (max-width: 800px) {
+            .viz {
+              grid-template-columns: 400px;
+            }
+            .viz header,
+            .viz footer {
+              grid-column: initial;
+            }
+            .viz footer {
+              margin-top: 2rem;
+            }
+          }
+
+          #graph{
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+            display: inline-block;
+            height: 500px;
+            width: 1100px;
+            position: absolute;
+            
+
+          }
+          #graph_rounded{
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+            display: inline-block;
+            height: 500px;
+            width: 1100px;}
+            
+         
+          
+          .morris-hover{position:absolute;z-index:1000;}
+          .morris-hover.morris-default-style{border-radius:10px;padding:6px;color:#ca0e0edf;border:solid 2px rgba(209, 12, 12, 0.8);font-family: 'Yanone Kaffeesatz', sans-serif; font-size:12px;text-align:center;color:#ca0e0edf}
+          .morris-hover.morris-default-style .morris-hover-row-label{font-weight:bold;margin:0.25em 0;}
+          .morris-hover-point{color:#ca0e0edf; font-family: 'Yanone Kaffeesatz', sans-serif;}
+
+          #graph2{
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+            display: inline-block;
+            height: 500px;
+            width: 1100px;
+            position: absolute;
+            
+
+          }
+          #graph_rounded2{
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+            display: inline-block;
+            height: 500px;
+            width: 1100px;}
+
+            #graphh1, #graphh2 {
+            display: inline-block;
+            height: 500px;
+            width: 1100px;
+            position: absolute;
+            }
+
+            
+
+.redtext {
+  color:#CD202C
+ }
+         
+
+
+ 
+
+          

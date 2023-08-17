@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+<meta charset=utf-8 />
+<meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+<meta name = "viewport" content="wisth=device-width, initial-scale=1.0">
+<title>Dashboard RZD</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" class="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="https://rawgithub.com/DmitryBaranovskiy/raphael/300aa589f5a0ba7fce667cd62c7cdda0bd5ad904/raphael-min.js"></script>
+<script src="https://rawgithub.com/dshapira/morris.js/ds-morris-rounded-bars/morris.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.2/Chart.bundle.js"></script>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="slider"></div>
+            <header class="header header-main" class="banner" id="mainHeader" role="banner">
+                <nav role="navigation">
+                    <div class="top-header">
+                        <div class="navBurger">
+                            <div class="burger"></div>
+                        </div>
+                    </div>
+                    <ul id="menu-vertical-menu" class="nav">
+                        <li class="menu__list-item">
+                            <a href="happy.html" class="menu__list-link">Happy birthday</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="diagramm.html" class="menu__list-link" alt="2">Диаграммы</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="graf.html" class="menu__list-link">Графики</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="raiting.html" class="menu__list-link">Отчеты за квартал</a>
+                        </li>
+                         <li class="menu__list-item">
+                            <a href="otdel.html" class="menu__list-link">Рейтинг отделов</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="appeals.html" class="menu__list-link">Удовлетворенность</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="dash.html" class="menu__list-link">Dashboard директора</a>
+                        </li>
+                        <li class="menu__list-item">
+                          <a href="index.html" class="menu__list-link" alt="1">Календарь</a>
+                      </li>
+                    </ul>
+                </header>
+                </div>
+            
+    <main class="main">
+        
+        <div class = "container">
+            <div class = "text__rait">Выполненные обращения за июнь 2023 года</div>
+                <div class = "text__osn">Общее количество выполненных обращений</div>
+                <div id="graph"></div>
+                <div id="graph_rounded"></div>
+                <div class = "text__osn">% обращений, выполненных при помощи цифровых сервисов</div>
+                <div id="graph2"></div>
+                <div id="graph_rounded2"></div>
+                <div class = "text__osn">Общее количество выполненных обращений</div>
+                <div style="width: 100%">
+                    <canvas id="canvas" height="450" width="600"></canvas>
+                </div>
+                <div class = "text__osn">Охват пользователей (%)</div>
+                <div style="width: 100%">
+                    <canvas id="canvas_2" height="450" width="600"></canvas>
+                </div>
+            </div>
+    </main>
+    <!-- <footer class="footer">
+        <div class="container">
+                <a class="logo" href="#">
+                    <img class = "logo__img" src = "image/image2.png">
+                </a>
+        </div>
+            <nav class = "footer__menu">
+            </nav>
+        </div>
+    </footer> -->
+    <script src ="js/graf.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+
+
+</body>

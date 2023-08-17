@@ -1,0 +1,739 @@
+
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+<meta charset=utf-8 />
+<meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+<meta name = "viewport" content="wisth=device-width, initial-scale=1.0">
+<title>Dashboard RZD</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/dash.css" class="stylesheet">
+<style>
+.custom-table {
+    border-collapse: collapse;
+  }
+  
+  thead th {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 18px;
+    font-weight:600;
+    font-size:16px;
+    background-color: #CD202C;
+    color: #fff;
+    
+  }
+  
+  thead th,
+  tbody td {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 18px;
+    font-weight:600;
+    font-size:16px;
+    border-top: 1px solid #B9B9B9;
+    border-bottom: 1px solid #B9B9B9;
+    padding: 10px;
+  }
+</style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="slider"></div>
+            <header class="header header-main" class="banner" id="mainHeader" role="banner">
+                <nav role="navigation">
+                    <div class="top-header">
+                        <div class="navBurger">
+                            <div class="burger"></div>
+                        </div>
+                    </div>
+                    <ul id="menu-vertical-menu" class="nav">
+                        <li class="menu__list-item">
+                            <a href="happy.html" class="menu__list-link">Happy birthday</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="diagramm.html" class="menu__list-link" alt="2">Диаграммы</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="graf.html" class="menu__list-link">Графики</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="raiting.html" class="menu__list-link">Отчеты за квартал</a>
+                        </li>
+                         <li class="menu__list-item">
+                            <a href="otdel.html" class="menu__list-link">Рейтинг отделов</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="appeals.html" class="menu__list-link">Удовлетворенность</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="dash.html" class="menu__list-link">Dashboard директора</a>
+                        </li>
+                        <li class="menu__list-item">
+                          <a href="index.html" class="menu__list-link" alt="1">Календарь</a>
+                      </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+    </div>
+    <main class="main">
+        <div class = "text__rait_dash">Удовлетворенность (dashboard директора) </div>
+        <div class="limiter">
+            <div class="wrap-table100">
+                <div class="table100 ver4 m-b-110">
+                    <div class="container">
+                    <table data-vertable="ver4" class="custom-table">
+            <thead>
+                <tr>
+                    <th class="border" >Отдел исполнителя</th>
+                    <th class="border">Удовлетворенность, %</th>
+                    <th class="border">Благодарности</th>
+                    <th class="border">Обращения, возвращенные на доработку</th>
+                    <th class="border">Жалобы обоснованные</th>
+                    <th class="border">Обращения с отличной оценкой</th>
+                    <th class="border">Обращения с хорошей оценкой</th>
+                    <th class="border">Обращения с неуд. оценкой</th>
+                    <th class="border">Общее количество обращений</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="border">БИР-ИВЦ-КБЩ</td>
+                    <td class="border">100,02%</td>
+                    <td class="border">0</td>
+                    <td class="border">0</td>
+                    <td class="border">0</td>
+                    <td class="border" class="colored-cell">4</td>
+                    <td class="border">0</td>
+                    <td class="border" >0</td>
+                    <td class="border">368</td>
+                </tr>
+                <tr>
+                    <td>КСУП-ИВЦ-КБЩ</td>
+                    <td>100,49%</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="highlight">36</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>146</td>
+                </tr>
+                <tr>
+                    <td>ОКС-ИВЦ-КБЩ</td>
+                    <td>100,17%</td>
+                    <td class="colored-cell">26</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="colored-cell ">220</td>
+                    <td>15</td>
+                    <td>0</td>
+                    <td>3533</td>
+                </tr>
+                <tr>
+                    <td>ПИК-ИВЦ-КБЩ</td>
+                    <td>99,86%</td>
+                    <td class="colored-cell">12</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="colored-cell ">199</td>
+                    <td>9</td>
+                    <td class="colored-cell1">1</td>
+                    <td>3825</td>
+                </tr>
+                <tr>
+                    <td>ПО-ИВЦ-КБЩ</td>
+                    <td>100,00%</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="colored-cell ">0</td>
+                    <td>15</td>
+                    <td>0</td>
+                    <td>29</td>
+                </tr>
+                <tr>
+                    <td>ПТК-ИВЦ-КБЩ</td>
+                    <td>100,04%</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="colored-cell">3</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>140</td>
+                </tr>
+                <tr>
+                    <td>РВП-ИВЦ-КБЩ</td>
+                    <td>100,25%</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="colored-cell ">0</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>СТО-ИВЦ-КБЩ</td>
+                    <td>100,00%</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="colored-cell ">0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>ТСМ-ИВЦ-КБЩ</td>
+                    <td>101,75%</td>
+                    <td class="colored-cell">1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="colored-cell ">1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>4</td>
+                </tr><tr>
+                    <td>УПП-ИВЦ-КБЩ</td>
+                    <td>98,93%</td>
+                    <td class="colored-cell">14</td>
+                    <td class="colored-cell1">1</td>
+                    <td>0</td>
+                    <td class="colored-cell ">52</td>
+                    <td>11</td>
+                    <td class="colored-cell1">1</td>
+                    <td>2638</td>
+                </tr>
+                <tr>
+                    <td>ЭТО-ИВЦ-КБЩ</td>
+                    <td>100,00%</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="colored-cell ">0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>ИТОГ</td>
+                    <td>99,75%</td>
+                    <td class="colored-cell">53</td>
+                    <td class="colored-cell1">1</td>
+                    <td>0</td>
+                    <td class="colored-cell ">515</td>
+                    <td>36</td>
+                    <td class="colored-cell1">2</td>
+                    <td>10699</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</div>
+</div> 
+
+        <div class = "text__rait_dash">Рейтинг отделов за июнь 2023 года</div>
+        <div class="limiter">
+            <div class="wrap-table100">
+                <div class="table100 ver4 m-b-110">
+                    <div class="container">
+                    <table data-vertable="ver4" class="custom-table">
+                    <thead>
+                    <tr class="row100 head">
+                    <th class="column100 column3" data-column="column3">Отдел</th>
+                    <!-- <th class="column100 column2" data-column="column2">Отдел</th> -->
+                    <th class="column100 column3" data-column="column3">Место ИТОГ за июнь</th>
+                    <th class="column100 column4" data-column="column4">Удовлетворенность</th>
+                    <th class="column100 column5" data-column="column5">Своевременность</th>
+                    <th class="column100 column6" data-column="column6">Оперативность</th>
+                    <th class="column100 column7" data-column="column7">Самостоятельность</th>
+                    <th class="column100 column8" data-column="column8">Время ожидания (от создания до взятия в работу)</th>
+                    <th class="column100 column8" data-column="column8">Время ожидания (с учетом режима) (от создания до взятия в работу)</th>
+                    <th class="column100 column8" data-column="column8">Время решения(от создания до выполнения)</th>
+                    <th class="column100 column8" data-column="column8">Время решения (с учетом режима)(от создания до выполнения)</th>
+
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="row100">
+                    <td class="column100 column1" data-column="column1">ПИК-ИВЦ-КБШ</td>
+                    <td class="column100 column2" data-column="column2">4</td>
+                    <td  class="colored-cell2" data-column="column3">2</td>
+                    <td class="column100 column4" data-column="column4">7</td>
+                    <td class="column100 column5" data-column="column5">4</td>
+                    <td class="column100 column6" data-column="column6">7</td>
+                    <td class="column100 column7" data-column="column7">7</td>
+                    <td class="column100 column8" data-column="column8">5</td>
+                    <td class="column100 column6" data-column="column6">5</td>
+                    <td class="column100 column7" data-column="column7">5</td>
+                    </tr>
+                    <tr class="row100">
+                    <td class="column100 column1" data-column="column1">ОКС-ИВЦ-КБШ</td>
+                    <td class="column100 column2" data-column="column2">10</td>
+                    <td  class="colored-cell2" data-column="column3">1</td>
+                    <td class="column100 column4" data-column="column4">10</td>
+                    <td class="column100 column5" data-column="column5">9</td>
+                    <td class="column100 column6" data-column="column6">6</td>
+                    <td class="colored-cell3" data-column="column7">15</td>
+                    <td class="column100 column8" data-column="column8">13</td>
+                    <td class="column100 column6" data-column="column6">11</td>
+                    <td class="column100 column7" data-column="column7">11</td>
+                    </tr>
+                    <tr class="row100">
+                    <td class="column100 column1" data-column="column1">УПП-ИВЦ-КБШ</td>
+                    <td class="column100 column2" data-column="column2">11</td>
+                    <td class="colored-cell2" data-column="column3">3</td>
+                    <td class="column100 column4" data-column="column4">10</td>
+                    <td class="column100 column5" data-column="column5">10</td>
+                    <td class="colored-cell3" data-column="column6">15</td>
+                    <td class="column100 column7" data-column="column7">12</td>
+                    <td class="column100 column8" data-column="column8">12</td>
+                    <td class="column100 column6" data-column="column6">11</td>
+                    <td class="column100 column7" data-column="column7">11</td>
+                    </tr>
+                    <tr class="row100">
+                    <td class="column100 column1" data-column="column1">КСУП-ИВЦ-КБШ</td>
+                    <td class="column100 column2" data-column="column2">13</td>
+                    <td class="colored-cell2" data-column="column3">1</td>
+                    <td class="colored-cell3" data-column="column4">9</td>
+                    <td class="colored-cell3" data-column="column5">15</td>
+                    <td class="column100 column6" data-column="column6">12</td>
+                    <td class="colored-cell3" data-column="column7">15</td>
+                    <td class="column100 column8" data-column="column8">11</td>
+                    <td class="column100 column6" data-column="column6">13</td>
+                    <td class="column100 column7" data-column="column7">14</td>
+                    </tr>
+                    </tbody>
+                    </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "text__rait_dash">Рейтинг ЦТС по полигону дороги за июнь 2023 года </div>
+        <div class="limiter">
+            <div class="wrap-table100">
+                <div class="table100 ver4 m-b-110">
+                    <div class="container">
+                    <table data-vertable="ver4" class="custom-table">
+                    <thead>
+                    <tr class="row100 head">
+                    <th class="column100 column3" data-column="column3">Отдел</th>
+                    <th class="column100 column3" data-column="column3">Место ИТОГ за июнь</th>
+                    <th class="column100 column4" data-column="column4">Удовлетворенность</th>
+                    <th class="column100 column5" data-column="column5">Своевременность</th>
+                    <th class="column100 column6" data-column="column6">Оперативность</th>
+                    <th class="column100 column7" data-column="column7">Самостоятельность</th>
+                    <th class="column100 column8" data-column="column8">Время ожидания (от создания до взятия в работу)</th>
+                    <th class="column100 column8" data-column="column8">Время ожидания (с учетом режима) (от создания до взятия в работу)</th>
+                    <th class="column100 column8" data-column="column8">Время решения(от создания до выполнения)</th>
+                    <th class="column100 column8" data-column="column8">Время решения (с учетом режима)(от создания до выполнения)</th>
+
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="row100">
+                    <td class="column100 column1" data-column="column1">КСУП</td>
+                    <td class="column100 column2" data-column="column2">9</td>
+                    <td  class="colored-cell2" data-column="column3">1</td>
+                    <td class="column100 column4" data-column="column4">6</td>
+                    <td class="column100 column5" data-column="column5">8</td>
+                    <td class="column100 column6" data-column="column6">6</td>
+                    <td class="column100 column7" data-column="column7">10</td>
+                    <td class="colored-cell2" data-column="column8">3</td>
+                    <td class="column100 column6" data-column="column6">11</td>
+                    <td class="column100 column7" data-column="column7">10</td>
+                    </tr>
+                    <tr class="row100">
+                    <td class="column100 column1" data-column="column1">ПИК</td>
+                    <td class="colored-cell2" data-column="column2">3</td>
+                    <td class="column100 column3" data-column="column3">5</td>
+                    <td class="colored-cell2" data-column="column4">3</td>
+                    <td class="column100 column5" data-column="column5">7</td>
+                    <td class="colored-cell2" data-column="column6">3</td>
+                    <td class="column100 column7" data-column="column7">7</td>
+                    <td class="colored-cell2" data-column="column8">2</td>
+                    <td class="column100 column6" data-column="column6">6</td>
+                    <td class="column100 column7" data-column="column7">4</td>
+                    </tr>
+                    <tr class="row100">
+                    <td class="column100 column1" data-column="column1">УПП</td>
+                    <td class="column100 column2" data-column="column2">11</td>
+                    <td class="colored-cell2" data-column="column3">1</td>
+                    <td class="column100 column4" data-column="column4">7</td>
+                    <td class="column100 column5" data-column="column5">10</td>
+                    <td class="column100 column6" data-column="column6">14</td>
+                    <td class="column100 column7" data-column="column7">13</td>
+                    <td class="column100 column8" data-column="column8">8</td>
+                    <td class="column100 column6" data-column="column6">11</td>
+                    <td class="column100 column7" data-column="column7">11</td>
+                    </tr>
+                    <tr class="row100">
+                    <td class="column100 column1" data-column="column1">ОКС</td>
+                    <td class="column100 column2" data-column="column2">4</td>
+                    <td class="colored-cell2" data-column="column3">1</td>
+                    <td class="column100 column3" data-column="column4">7</td>
+                    <td class="colored-cell2" data-column="column5">3</td>
+                    <td class="column100 column6" data-column="column6">5</td>
+                    <td class="column100 column7" data-column="column7">8</td>
+                    <td class="column100 column8" data-column="column8">6</td>
+                    <td class="column100 column6" data-column="column6">9</td>
+                    <td class="column100 column7" data-column="column7">5</td>
+                    </tr>
+                    </tbody>
+                    </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "text__rait_dash">Рейтинг ИВЦ за июнь 2023 года по показателям дашборда ГВЦ</div>
+        <div class="limiter">
+            <div class="wrap-table100">
+                <div class="table100 ver4 m-b-110">
+                    <div class="container">
+                    <table data-vertable="ver4" class="custom-table">
+                    <thead>
+                    <tr class="row100 head">
+                    <th class="column100 column3" data-column="column3">ИВЦ</th>
+                    <th class="column100 column3" data-column="column3">Место ИТОГ за июнь</th>
+                    <th class="column100 column4" data-column="column4">Удовлетворенность</th>
+                    <th class="column100 column5" data-column="column5">Своевременность</th>
+                    <th class="column100 column6" data-column="column6">Оперативность</th>
+                    <th class="column100 column7" data-column="column7">Самостоятельность</th>
+                    <th class="column100 column8" data-column="column8">Время ожидания (от создания до взятия в работу)</th>
+                    <th class="column100 column8" data-column="column8">Время ожидания  (с учетом режима) (от создания до взятия в работу)</th>
+                    <th class="column100 column8" data-column="column8">Время решения(от создания до выполнения)</th>
+                    <th class="column100 column8" data-column="column8">Время решения (с учетом режима)(от создания до выполнения)</th>
+
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="row100">
+                            <td class="column100 column3" data-column="column2">Хабаровский ИВЦ</td>
+                            <td class="colored-cell2" data-column="column2">1</td>
+                            <td class="colored-cell2" data-column="column3">1</td>
+                            <td class="colored-cell2" data-column="column4">1</td>
+                            <td class="colored-cell2" data-column="column5">1</td>
+                            <td class="colored-cell2" data-column="column6">1</td>
+                            <td class="colored-cell2" data-column="column7">2</td>
+                            <td class="colored-cell2" data-column="column8">1</td>
+                            <td class="colored-cell2" data-column="column6">1</td>
+                            <td class="colored-cell2" data-column="column7">1</td>
+                            </tr>
+                            <tr class="row100">
+                            <td class="column100 column2" data-column="column1">ГВЦ</td>
+                            <td class="ccolored-cell2" data-column="column2">2</td>
+                            <td class="column100 column3" data-column="column3">12</td>
+                            <td class="column100 column4" data-column="column4">4</td>
+                            <td class="colored-cell2" data-column="column5">2</td>
+                            <td class="colored-cell2" data-column="column6">2</td>
+                            <td class="colored-cell2" data-column="column7">1</td>
+                            <td class="colored-cell2" data-column="column8">2</td>
+                            <td class="colored-cell2" data-column="column6">2</td>
+                            <td class="colored-cell2" data-column="column7">2</td>
+                            </tr>
+                            <tr class="row100">
+                            <td class="column100 column1" data-column="column1">Саратовский ИВЦ</td>
+                            <td class="colored-cell2" data-column="column2">3</td>
+                            <td class="column100 column3" data-column="column3">7</td>
+                            <td class="colored-cell2" data-column="column4">3</td>
+                            <td class="colored-cell2" data-column="column5">3</td>
+                            <td class="column100 column6" data-column="column6">4</td>
+                            <td class="column100 column7" data-column="column7">6</td>
+                            <td class="column100 column8" data-column="column8">4</td>
+                            <td class="colored-cell2" data-column="column6">3</td>
+                            <td class="column100 column7" data-column="column7">4</td>
+                            </tr>
+                            <tr class="row100">
+                            <td class="column100 column1" data-column="column1">Нижегородский ИВЦ</td>
+                            <td class="column100 column3" data-column="column2">4</td>
+                            <td class="colored-cell3" data-column="column3">14</td>
+                            <td class="column100 column3" data-column="column4">5</td>
+                            <td class="column100 column5" data-column="column5">6</td>
+                            <td class="colored-cell2" data-column="column6">3</td>
+                            <td class="column100 column7" data-column="column7">5</td>
+                            <td class="column100 column3" data-column="column8">5</td>
+                            <td class="column100 column6" data-column="column6">4</td>
+                            <td class="column100 column7" data-column="column7">5</td>
+                            </tr>
+                            <tr class="row100">
+                            <td class="column100 column1" data-column="column1">Красноярский ИВЦ</td>
+                            <td class="column100 column2" data-column="column2">5</td>
+                            <td class="column100 column3" data-column="column3">7</td>
+                            <td class="colored-cell3" data-column="column4">14</td>
+                            <td class="column100 column5" data-column="column5">7</td>
+                            <td class="column100 column6" data-column="column6">12</td>
+                            <td class="colored-cell2" data-column="column7">3</td>
+                            <td class="colored-cell2" data-column="column8">3</td>
+                            <td class="column100 column6" data-column="column6">6</td>
+                            <td class="column100 column7" data-column="column7">7</td>
+                            </tr>
+                            <tr class="row100">
+                            <td class="column100 column1" data-column="column1">Воронежский ИВЦ</td>
+                            <td class="column100 column2" data-column="column2">5</td>
+                            <td class="colored-cell2" data-column="column3">2</td>
+                            <td class="colored-cell2" data-column="column4">2</td>
+                            <td class="column100 column3" data-column="column5">9</td>
+                            <td class="column100 column6" data-column="column6">10</td>
+                            <td class="column100 column7" data-column="column7">9</td>
+                            <td class="column100 column8" data-column="column8">10</td>
+                            <td class="column100 column6" data-column="column6">8</td>
+                            <td class="column100 column7" data-column="column7">9</td>
+                            </tr>
+                            <tr class="row100">
+                            <td class="column100 column1" data-column="column1">Ярославский ИВЦ</td>
+                            <td class="column100 column2" data-column="column2">6</td>
+                            <td class="column100 column3" data-column="column3">10</td>
+                            <td class="column100 column4" data-column="column4">8</td>
+                            <td class="column100 column5" data-column="column5">11</td>
+                            <td class="column100 column6" data-column="column6">9</td>
+                            <td class="column100 column7" data-column="column7">8</td>
+                            <td class="column100 column8" data-column="column8">7</td>
+                            <td class="column100 column6" data-column="column6">5</td>
+                            <td class="column100 column7" data-column="column7">6</td>
+                            </tr>
+                            <tr class="row100">
+                            <td class="column100 column1" data-column="column1">Читинский ИВЦ</td>
+                            <td class="column100 column2" data-column="column2">7</td>
+                            <td class="column100 column6" data-column="column3">8</td>
+                            <td class="column100 column3" data-column="column4">11</td>
+                            <td class="column100 column6" data-column="column5">5</td>
+                            <td class="column100 column6" data-column="column6">13</td>
+                            <td class="column100 column7" data-column="column7">14</td>
+                            <td class="column100 column8" data-column="column8">8</td>
+                            <td class="column100 column6" data-column="column6">4</td>
+                            <td class="colored-cell2" data-column="column7">3</td>
+                            </tr>
+                            <tr class="row100">
+                            <td class="column100 column1" data-column="column1">Ростовский ИВЦ</td>
+                            <td class="column100 column2" data-column="column2">8</td>
+                            <td class="column100 column6" data-column="column3">11</td>
+                            <td class="column100 column3" data-column="column4">6</td>
+                            <td class="column100 column6" data-column="column5">4</td>
+                            <td class="column100 column6" data-column="column6">5</td>
+                            <td class="column100 column7" data-column="column7">12</td>
+                            <td class="column100 column8" data-column="column8">12</td>
+                            <td class="column100 column6" data-column="column6">11</td>
+                            <td class="column100 column7" data-column="column7">11</td>
+                            </tr>
+                            <tr class="row100">
+                            <td class="column100 column1" data-column="column1">Челябинский ИВЦ</td>
+                            <td class="column100 column2" data-column="column2">9</td>
+                            <td class="column100 column3" data-column="column3">6</td>
+                            <td class="column100 column4" data-column="column4">10</td>
+                            <td class="colored-cell3" data-column="column5">15</td>
+                            <td class="column100 column6" data-column="column6">6</td>
+                            <td class="column100 column7" data-column="column7">7</td>
+                            <td class="column100 column8" data-column="column8">6</td>
+                            <td class="column100 column6" data-column="column6">12</td>
+                            <td class="column100 column7" data-column="column7">13</td>
+                            </tr>
+                            <tr class="row100">
+                            <td class="column100 column1" data-column="column1">Иркутский ИВЦ</td>
+                            <td class="column100 column2" data-column="column2">10</td>
+                            <td class="column100 column2" data-column="column3">4</td>
+                            <td class="column100 column3" data-column="column4">10</td>
+                            <td class="column100 column2" data-column="column5">13</td>
+                            <td class="colored-cell3" data-column="column6">16</td>
+                            <td class="column100 column7" data-column="column7">13</td>
+                            <td class="column100 column8" data-column="column8">89</td>
+                            <td class="column100 column6" data-column="column6">7</td>
+                            <td class="column100 column7" data-column="column7">8</td>
+                            </tr>
+                            <tr class="row100">
+                            <td class="column100 column1" data-column="column1">Самарский ИВЦ</td>
+                            <td class="column100 column2" data-column="column2">11</td>
+                            <td class="colored-cell2" data-column="column3">3</td>
+                            <td class="column100 column3" data-column="column4">12</td>
+                            <td class="column100 column6" data-column="column5">8</td>
+                            <td class="column100 column6" data-column="column6">11</td>
+                            <td class="colored-cell3" data-column="column7">15</td>
+                            <td class="colored-cell3" data-column="column8">13</td>
+                            <td class="column100 column6" data-column="column6">9</td>
+                            <td class="column100 column7" data-column="column7">10</td>
+                            </tr>
+                            <tr class="row100">
+                            <td class="column100 column1" data-column="column1">Московский ИВЦ</td>
+                            <td class="column100 column2" data-column="column2">12</td>
+                            <td class="column100 column3" data-column="column3">5</td>
+                            <td class="column100 column4" data-column="column4">7</td>
+                            <td class="column100 column5" data-column="column5">10</td>
+                            <td class="column100 column6" data-column="column6">7</td>
+                            <td class="colored-cell3" data-column="column7">16</td>
+                            <td class="colored-cell3" data-column="column8">15</td>
+                            <td class="column100 column6" data-column="column6">10</td>
+                            <td class="column100 column7" data-column="column7">12</td>
+                            </tr>
+                            <tr class="row100">
+                            <td class="column100 column1" data-column="column1">Санкт-Петербургский ИВЦ</td>
+                            <td class="colored-cell3" data-column="column2">13</td>
+                            <td class="column100 column2" data-column="column3">9</td>
+                            <td class="column100 column3" data-column="column4">9</td>
+                            <td class="column100 column3" data-column="column5">12</td>
+                            <td class="column100 column6" data-column="column6">8</td>
+                            <td class="column100 column7" data-column="column7">10</td>
+                            <td class="column100 column8" data-column="column8">10</td>
+                            <td class="column100 column6" data-column="column6">13</td>
+                            <td class="column100 column7" data-column="column7">14</td>
+                            </tr>
+                            <tr class="row100">
+                            <td class="column100 column1" data-column="column1">Калининградский ИВЦ</td>
+                            <td class="colored-cell3" data-column="column2">14</td>
+                            <td class="colored-cell3" data-column="column3">13</td>
+                            <td class="colored-cell3" data-column="column4">16</td>
+                            <td class="colored-cell3" data-column="column5">16</td>
+                            <td class="colored-cell3" data-column="column6">15</td>
+                            <td class="column100 column7" data-column="column7">4</td>
+                            <td class="column100 column8" data-column="column8">8</td>
+                            <td class="colored-cell3" data-column="column6">15</td>
+                            <td class="colored-cell3" data-column="column7">16</td>
+                            </tr>
+                            <tr class="row100">
+                            <td class="column100 column1" data-column="column1">Новосибирский ИВЦ</td>
+                            <td class="colored-cell3" data-column="column2">15</td>
+                            <td class="colored-cell3" data-column="column3">12</td>
+                            <td class="colored-cell3" data-column="column4">15</td>
+                            <td class="colored-cell3" data-column="column5">17</td>
+                            <td class="column100 column6" data-column="column6">14</td>
+                            <td class="column100 column7" data-column="column7">11</td>
+                            <td class="column100 column8" data-column="column8">11</td>
+                            <td class="colored-cell3" data-column="column6">14</td>
+                            <td class="colored-cell3" data-column="column7">15</td>
+                            </tr>
+                            <tr class="row100">
+                            <td class="column100 column1" data-column="column1">Екатеринбургский ИВЦ</td>
+                            <td class="colored-cell3" data-column="column2">1</td>
+                            <td class="colored-cell2" data-column="column3">1</td>
+                            <td class="column100 column3" data-column="column4">13</td>
+                            <td class="column100 column3" data-column="column5">14</td>
+                            <td class="colored-cell3" data-column="column6">17</td>
+                            <td class="colored-cell3" data-column="column7">17</td>
+                            <td class="colored-cell3" data-column="column8">14</td>
+                            <td class="colored-cell3" data-column="column6">16</td>
+                            <td class="colored-cell3" data-column="column7">17</td>
+                            </tr>
+                    </tbody>
+                    </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "text__rait_dash">Рейтинг Самарского ИВЦ по показателям дашборда ГВЦ</div>
+        <div class="limiter">
+            <div class="wrap-table100">
+                <div class="table100 ver4 m-b-110">
+                    <div class="container">
+                    <table data-vertable="ver4" class="custom-table">
+                    <thead>
+                    <tr class="row100 head">
+                    <th class="column100 column3" data-column="column3">ИВЦ</th>
+                    <th class="column100 column3" data-column="column3">Место ИТОГ</th>
+                    <th class="column100 column4" data-column="column4">Удовлетворенность</th>
+                    <th class="column100 column5" data-column="column5">Своевременность</th>
+                    <th class="column100 column6" data-column="column6">Оперативность</th>
+                    <th class="column100 column7" data-column="column7">Самостоятельность</th>
+                    <th class="column100 column8" data-column="column8">Время ожидания (от создания до взятия в работу)</th>
+                    <th class="column100 column8" data-column="column8">Время ожидания (с учетом режима) (от создания до взятия в работу)</th>
+                    <th class="column100 column8" data-column="column8">Время решения(от создания до выполнения)</th>
+                    <th class="column100 column8" data-column="column8">Время решения (с учетом режима)(от создания до выполнения)</th>
+
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="row100">
+                    <td class="column100 column1" data-column="column1">Январь</td>
+                    <td class="column100 column2" data-column="column2">12</td>
+                    <td class="column100 column2" data-column="column3">4</td>
+                    <td class="column100 column4" data-column="column4">9</td>
+                    <td class="column100 column5" data-column="column5">12</td>
+                    <td class="column100 column6" data-column="column6">12</td>
+                    <td class="colored-cell3" data-column="column7">15</td>
+                    <td class="colored-cell3" data-column="column8">17</td>
+                    <td class="column100 column6" data-column="column6">11</td>
+                    <td class="column100 column7" data-column="column7">11</td>
+                    </tr>
+                    <tr class="row100">
+                    <td class="column100 column1" data-column="column1">Февраль</td>
+                    <td class="colored-cell3" data-column="column2">15</td>
+                    <td class="column100 column3" data-column="column3">7</td>
+                    <td class="colored-cell3" data-column="column4">15</td>
+                    <td class="column100 column5" data-column="column5">12</td>
+                    <td class="colored-cell3" data-column="column6">16</td>
+                    <td class="colored-cell3" data-column="column7">15</td>
+                    <td class="column100 column2" data-column="column8">14</td>
+                    <td class="column100 column6" data-column="column6">13</td>
+                    <td class="column100 column7" data-column="column7">13</td>
+                    </tr>
+                    <tr class="row100">
+                    <td class="column100 column1" data-column="column1">Март</td>
+                    <td class="column100 column2" data-column="column2">6</td>
+                    <td class="colored-cell2" data-column="column3">2</td>
+                    <td class="column100 column4" data-column="column4">10</td>
+                    <td class="column100 column5" data-column="column5">5</td>
+                    <td class="column100 column6" data-column="column6">8</td>
+                    <td class="column100 column7" data-column="column7">11</td>
+                    <td class="column100 column2" data-column="column8">10</td>
+                    <td class="column100 column6" data-column="column6">6</td>
+                    <td class="column100 column7" data-column="column7">6</td>
+                    </tr>
+                    <tr class="row100">
+                    <td class="column100 column1" data-column="column1">Апрель</td>
+                    <td class="column100 column2" data-column="column2">8</td>
+                    <td class="colored-cell2" data-column="column3">3</td>
+                    <td class="column100 column2" data-column="column4">9</td>
+                    <td class="column100 column5" data-column="column5">6</td>
+                    <td class="column100 column2" data-column="column6">9</td>
+                    <td class="column100 column7" data-column="column7">11</td>
+                    <td class="column100 column2" data-column="column8">10</td>
+                    <td class="column100 column6" data-column="column6">8</td>
+                    <td class="column100 column7" data-column="column7">8</td>
+                    </tr>
+                    <tr class="row100">
+                    <td class="column100 column1" data-column="column1">Май</td>
+                    <td class="column100 column2" data-column="column2">12</td>
+                    <td class="colored-cell3" data-column="column3">10</td>
+                    <td class="column100 column4" data-column="column4">12</td>
+                    <td class="column100 column5" data-column="column5">7</td>
+                    <td class="column100 column6" data-column="column6">11</td>
+                    <td class="column100 column7" data-column="column7">13</td>
+                    <td class="column100 column2" data-column="column8">11</td>
+                    <td class="column100 column6" data-column="column6">9</td>
+                    <td class="column100 column7" data-column="column7">10</td>
+                    </tr>
+                    <tr class="row100">
+                    <td class="column100 column1" data-column="column1">Июнь</td>
+                    <td class="column100 column2" data-column="column2">11</td>
+                    <td class="colored-cell2" data-column="column3">3</td>
+                    <td class="column100 column2" data-column="column4">12</td>
+                    <td class="column100 column5" data-column="column5">8</td>
+                    <td class="column100 column2" data-column="column6">11</td>
+                    <td class="colored-cell3" data-column="column7">15</td>
+                    <td class="colored-cell3" data-column="column8">13</td>
+                    <td class="column100 column6" data-column="column6">9</td>
+                    <td class="column100 column7" data-column="column7">10</td>
+                    </tr>
+                    </tbody>
+                    </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <nav class = "footer__menu">
+                <a class="logo" href="#">
+                    <img class = "logo__img" src = "image/image2.png" alt="">
+                </a>
+            </nav>
+        </div>
+    </footer>
+    <script src="js/happy.js"></script>
+
+</body>

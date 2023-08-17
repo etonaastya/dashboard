@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+<meta charset=utf-8 />
+<meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+<meta name = "viewport" content="wisth=device-width, initial-scale=1.0">
+<title>Dashboard RZD</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/diagramms.css" class="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="slider"></div>
+            <header class="header header-main" class="banner" id="mainHeader" role="banner">
+                <nav role="navigation">
+                    <div class="top-header">
+                        <div class="navBurger">
+                            <div class="burger"></div>
+                        </div>
+                    </div>
+                    <ul id="menu-vertical-menu" class="nav">
+                        <li class="menu__list-item">
+                            <a href="happy.html" class="menu__list-link">Happy birthday</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="diagramm.html" class="menu__list-link" alt="2">Диаграммы</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="graf.html" class="menu__list-link">Графики</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="raiting.html" class="menu__list-link">Отчеты за квартал</a>
+                        </li>
+                         <li class="menu__list-item">
+                            <a href="otdel.html" class="menu__list-link">Рейтинг отделов</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="appeals.html" class="menu__list-link">Удовлетворенность</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="dash.html" class="menu__list-link">Dashboard директора</a>
+                        </li>
+                        <li class="menu__list-item">
+                          <a href="index.html" class="menu__list-link" alt="1">Календарь</a>
+                      </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <main class="main">
+        <div class="container">
+            <div class = "text__rait">Использование чат-бота по ЗО инициатора 63-КБШ в разрезе ЦТС за 2 квартал</div>
+            <canvas id="myChart"></canvas>
+            
+            <div class = "text__otdel">Маркировка объектов в АСУ ЕСПП за июнь (исполнитель сотрудник Самарского ИВЦ)
+            <div class="col-6"><canvas id="myChart2"></div></div></canvas>
+            
+
+            <div class = "text__otdel">Маркировка объектов в АСУ ЕСПП за июнь  (исполнитель сотрудник Самарского ИВЦ, ЗО инициатора 63-КБШ)
+            <div class="col-6"><canvas id="myChart3"></div></div></canvas>
+        </div>
+        
+    </main>
+    <footer class="footer">
+        <!-- <div class="container"> -->
+                <a class="logo" href="#">
+                    <img class = "logo__img" src = "image/image2.png">
+                </a>
+        <!-- </div> -->
+    </footer>
+    <div class="container">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+
+    <!-- <script src="https://www.amcharts.com/lib/4/core.js"></script>
+    <script src="https://www.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script> -->
+    <script src ="js/main.js"></script>
+    
+    </div>
+</body>
